@@ -7,6 +7,12 @@ import android.widget.TextView;
 
 import org.greenrobot.eventbus.EventBus;
 
+/**
+ * 参考博客
+ * http://kingideayou.github.io/2016/03/07/appcompat_23.2_day_night/
+ *
+ * https://blog.csdn.net/rongbinjava/article/details/51841141
+ */
 public class MainActivity extends BaseActivity {
 
     private TextView tv;
