@@ -27,10 +27,9 @@
         android:text="模式：白天"
         android:textColor="@color/text_color"
         />
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:background="@drawable/shape_btn_bg"
         android:textColor="@color/text_color"
-        android:id="@+id/btn1"
         android:layout_marginTop="10dp"
         android:onClick="onClick"
         android:text="模式变换"
@@ -43,10 +42,9 @@
         android:src="@mipmap/ic_hot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:background="@drawable/shape_btn_bg"
         android:textColor="@color/text_color"
-        android:id="@+id/btn2"
         android:layout_marginTop="10dp"
         android:onClick="onIntent"
         android:text="跳转"
