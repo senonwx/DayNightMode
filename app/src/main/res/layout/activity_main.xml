@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建带-night后缀的文件夹（比如：values-night），然后添加你的资源文件，资源文件需要相同的命名（比如：colors.xml），这样就把夜间资源和日间资源关联起来了。这里注意一下，如果是drawable-xxhdpi中的资源需要夜间模式，这些夜间的资源就应该放在drawable-night-xxhdpi文件夹中。这里其实灵活性很大的，比如你可以在values-night中创建一个strings.xml，实现日夜间显示不同的文本。甚至你可以在layout-night中创建一个同样名字的布局文件，实现日夜间显示不同的布局。"
+        android:textColor="@color/text_color"
+         />
+
+    <TextView
+        android:padding="5dp"
+        android:background="@color/shape_color"
+        android:id="@+id/mode_tv"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模式：白天"
+        android:textColor="@color/text_color"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:text="模式变换"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/igv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:onClick="onIntent"
+        android:text="跳转"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

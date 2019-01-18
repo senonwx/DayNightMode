@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="把所有用到的view全部自定义一套，根据color和drawable命名规范，比如加_night后缀。根据当前设置的日夜间模式，在onDraw之前获取对应的color或者drawable，然后再进行绘制。"
+        android:textColor="@color/text_color"
+         />
+
+    <TextView
+        android:padding="5dp"
+        android:background="@color/shape_color"
+        android:id="@+id/mode_tv"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模式：白天"
+        android:textColor="@color/text_color"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:text="模式变换"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/igv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:onClick="onBack"
+        android:text="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
