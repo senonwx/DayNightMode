@@ -8,5 +8,6 @@
     <color name="bg">#464646</color>
     <color name="text_color">#eae7e7</color>
     <color name="shape_color">#d69f9f</color>
+    <color name="shape_btn_color">#5a7c6e</color>
 
 </resources>

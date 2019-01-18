@@ -33,7 +33,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Subscribe(threadMode = ThreadMode.MAIN) //在ui线程执行
     public void onEventReceived(BaseEvent event) {
         if(event.getCode() == 1){//收到改变主题的通知
-            if(ModeConstant.isNight){
+            if(PreferenceUtil.getBoolean(PreferenceUtil.isNight,false)){
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             }else{
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
